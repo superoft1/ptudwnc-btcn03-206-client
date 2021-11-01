@@ -40,7 +40,7 @@ export default function ClassForm({onclick}) {
 
   const onSubmit = (values, props) => {
     setIsSent(false);
-    axios.post("http://localhost:3001/classes", values)
+    axios.post("https://btcn03api206.herokuapp.com/classes", values)
       .then(() => {
         setIsSent(true);
       })
