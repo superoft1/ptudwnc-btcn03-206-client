@@ -16,7 +16,7 @@ function ClassList () {
     const [classes, setClasses] = useState([]);
 
     useEffect(() => {
-      axios.get("http://localhost:3001/classes")
+      axios.get("https://btcn03api206.herokuapp.com/classes")
         .then(res => {
           setIsLoaded(true);
           setClasses(res.data);
